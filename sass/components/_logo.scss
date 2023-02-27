@@ -1,0 +1,11 @@
+.navbar .logo a {
+    font-family: 'Lobster';
+    font-size: 30px;
+    color: var(--black-100);
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.navbar .logo a span {
+    color: var(--black-400);
+}
