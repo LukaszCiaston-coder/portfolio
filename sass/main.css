@@ -311,4 +311,21 @@ ul {
   100% {
     transform: perspective(1000px) rotateY(360deg);
   }
+}
+.project {
+  background: linear-gradient(to right, #00a78e, #2c5362);
+  height: 400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact {
+  background: linear-gradient(to right, #2c5362, #00a78e);
+  height: 400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }/*# sourceMappingURL=main.css.map */
