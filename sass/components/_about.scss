@@ -1,0 +1,48 @@
+.about{
+    background: linear-gradient(to right,#2c5362, #00a78e);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    &__slider{
+        position: relative;
+        width:200px;
+        height: 200px;
+        transform-style: preserve-3d;
+        animation: rotate 30s linear infinite;
+    }
+    &__slider span{
+        position: absolute;
+        top: 0;
+        left:0;
+        width:100%;
+        height: 100%;
+        transform-origin: center;
+        transform-style: preserve-3d;
+        transform: rotateY(calc(var(--i)*45deg)) translateZ(350px);
+    }
+    &__slider span img{
+        position: absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height: 100%;
+        border-radius: 40px;
+        object-fit: cover;
+        transition: 2s;
+    }
+    &__slider span:hover img{
+        transform: translateY(-50px) scale(1.2);
+
+    }
+}
+
+@keyframes rotate{
+    0%{
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    100%{
+        transform: perspective(1000px)rotateY(360deg);
+    }
+}

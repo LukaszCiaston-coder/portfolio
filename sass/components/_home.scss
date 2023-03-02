@@ -32,21 +32,6 @@
 .home__multiple{
     position: relative;
 }
-.home__multiple::after{
-    content:'|';
-    position: absolute;
-    right:0;
-    color: #00a78e;
-    background-color: #141272;
-    width:100%;
-    animation: typing 5s steps(20) infinite;
-}
-@keyframes typing {
-    to{
-        width:0%;
-    }
-}
-
 .social-media a {
     display: inline-flex;
     justify-content: center;
