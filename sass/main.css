@@ -265,7 +265,7 @@ ul {
   }
 }
 .about {
-  background: linear-gradient(to right, #2c5362, #00a78e);
+  background: linear-gradient(to bottom, #141272, #00a78e);
   height: 100vh;
   display: flex;
   align-items: center;
@@ -300,8 +300,13 @@ ul {
      object-fit: cover;
   transition: 2s;
 }
+.about__slider:hover {
+  animation-play-state: paused;
+  cursor: pointer;
+}
 .about__slider span:hover img {
-  transform: translateY(-50px) scale(1.2);
+  border: 2px solid white;
+  box-shadow: 0 0 30px white;
 }
 
 @keyframes rotate {
@@ -313,7 +318,7 @@ ul {
   }
 }
 .project {
-  background: linear-gradient(to right, #00a78e, #2c5362);
+  background: linear-gradient(to bottom, #00a78e, #141272);
   height: 400px;
   width: 100%;
   display: flex;
@@ -322,7 +327,7 @@ ul {
 }
 
 .contact {
-  background: linear-gradient(to right, #2c5362, #00a78e);
+  background: #141272;
   height: 400px;
   width: 100%;
   display: flex;
