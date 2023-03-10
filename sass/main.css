@@ -58,7 +58,7 @@ ul {
   position: fixed;
   z-index: 999;
   width: 100%;
-  background-color: #141272;
+  background-color: #141272 0.5;
   padding: 25px;
   border-bottom: 2px solid #00a78e;
 }
