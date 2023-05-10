@@ -24,6 +24,7 @@
         transform-origin: center;
         transform-style: preserve-3d;
         transform: rotateY(calc(var(--i)*45deg)) translateZ(350px);
+        -webkit-box-reflect: below 0px linear-gradient(transparent,transparent,#0004);
     }
     &__slider span img{
         position: absolute;

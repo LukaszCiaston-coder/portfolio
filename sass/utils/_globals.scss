@@ -9,7 +9,9 @@ body {
 ul {
     list-style: none;
 }
-
+a {
+    color: white;
+}
 * {
     padding: 0;
     margin: 0;
@@ -18,15 +20,38 @@ ul {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1536px;
     margin: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
+@media(max-width:1536px){
+.container{
+    max-width: 1284px;
 }
-
-.justify-content-between {
-    justify-content: space-between;
+}
+@media(max-width:1280px) {
+    .container {
+        max-width: 1024px;
+    }
+}
+@media(max-width:1024px) {
+    .container {
+        max-width: 768px;
+    }
+}
+@media(max-width:768px) {
+    .container {
+        max-width: 640px;
+    }
+}
+@media(max-width:640px) {
+    .container {
+        max-width: 475px;
+    }
+}
+@media(max-width:475px) {
+    .container {
+        max-width: 100%;
+    }
 }

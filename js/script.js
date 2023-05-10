@@ -1,6 +1,12 @@
-var typed = new Typed(".home__multiple",{
-    strings: ["Web Deweloper", "Web Designer", "Web Master"],
-    typeSpeed: 70,
-    backSpeed: 70,
-    loop: true
-}) 
+window.onload = function () {
+    let spanNode = document.querySelector('.home__multiple');
+    let words = ['Web Designer', 'Web Deweloper', 'Web Master'];
+    let i = 0;
+    setInterval(function () {
+        spanNode.textContent = words[i];
+        i = (i + 1) % words.length;
+    }, 2000);
+}
+ 
+
+

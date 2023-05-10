@@ -1,11 +1,12 @@
-.navbar .logo a {
+.logo {
     font-family: 'Lobster';
     font-size: 30px;
-    color: var(--black-100);
     font-weight: 600;
     text-transform: capitalize;
 }
-
-.navbar .logo a span {
+.marin{
     color: #00a78e;
+}
+.navbar.logo{
+    margin-right: 200px;
 }
