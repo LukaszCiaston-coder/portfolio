@@ -1,17 +1,28 @@
-.contact{
-        background:  #141272;
-        height: 400px;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: left;
-        font-family: 'Mynerve';
-        font-size: 30px;
-        text-transform: capitalize;
-       
-}
+  .contact {
+      background: #141272;
+      height: 400px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Mynerve';
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #fff;
+  }
 
-    .footer__adress{
-        margin-top: 20px;
-        margin-left: 20px;
-    }
+  .footer__address__items {
+    margin-top: 200px;
+      text-align: center;
+  }
+.footer__address{
+    margin-top: 40px;
+}
+  .footer__link {
+      color: #fff;
+      text-decoration: none;
+  }
+
+  .footer__link:hover {
+      text-decoration: underline;
+  }

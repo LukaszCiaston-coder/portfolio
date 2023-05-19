@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-    
     <title>Łukasz Ciastoń</title>
     <meta name="description" content="Łukasz Ciastoń">
     <meta charset="utf-8">
@@ -18,44 +17,52 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Mynerve&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Importowanie plików CSS i JavaScript dla slick-carousel -->
+<link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
 </head>
 
 <body>
     <!--==== Navbar Start ====-->
-<nav class="navbar">
- <div class="container">
-  <div class="row justify-content-between">
-   <div class="logo"><a href="index.html">Luki<span class="marin">Puki</span></a></div>
-    <ul class="menu">
-     <li class="nav-item"><a href="#home" class="nav-link">Home<span></span></a></li>
-     <li class="nav-item"><a href="#about" class="nav-link">About me<span></span></a></li>
-     <li class="nav-item"><a href="#project" class="nav-link">Project<span></span></a></li>
-     <li class="nav-item"><a href="#contact" class="nav-link">Contact<span></span></a></li>
-    </ul>
-  </div>
- </div>
-</nav>
+    <nav class="navbar">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="logo"><a href="index.html">Luki<span class="marin">Puki</span></a></div>
+                <ul class="menu">
+                    <li class="nav-item"><a href="#home" class="nav-link">Home<span></span></a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About me<span></span></a></li>
+                    <li class="nav-item"><a href="#project" class="nav-link">Project<span></span></a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact<span></span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <!--==== Navbar End ====-->
     <!--==== Main page====-->
-<section id="home" class="home">
-    <div class="home__content container">
-<h3>Hello, I'm</h3>
-<h1>Łukasz Ciastoń</h1>
-<h3>And I'm a <span class="home__multiple"></span></h3>
-<div class="social-media">
-    <a href="#"><i class='bx bxl-facebook'></i></a>
-    <a href="#"><i class='bx bxl-twitter'></i></a>
-    <a href="https://www.linkedin.com/in/%C5%82ukasz-ciasto%C5%84-0031b9276/"><i class='bx bxl-linkedin'></i></a>
-    <a href="https://github.com/LukaszCiaston-coder"><i class='bx bxl-github'></i></a>
-</div>
-<a href="" class="btn">Download CV</a>
-    </div>
-    <div class="home__animation">
-        <div class="home__image">
-            <img src="images/4.jpg" alt="man with black and red shirt">
-    </div>
-    </div>
-</section>
+    <section id="home" class="home">
+        <div class="home__content container">
+            <h3>Hello, I'm</h3>
+            <h1>Łukasz Ciastoń</h1>
+            <h3>And I'm a <span class="home__multiple"></span></h3>
+            <div class="social-media">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="https://www.linkedin.com/in/%C5%82ukasz-ciasto%C5%84-0031b9276/"><i
+                        class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/LukaszCiaston-coder"><i class='bx bxl-github'></i></a>
+            </div>
+            <a href="" class="btn">Download CV</a>
+        </div>
+        <div class="home__animation">
+            <div class="home__image">
+                <img class="hero" src="images/4.jpg" alt="man with black and red shirt">
+                <div class="video-container">
+                    <video class="video" src="images/video.mp4"></video>
+                </div>
+            </div>
+        </div>
+    </section>
     <!--==== End Main page====-->
     <!--====About Me====-->
     <section id="about" class="about">
@@ -73,34 +80,146 @@
     <!--====End About Me====-->
     <!--====Portfolio====-->
     <section id="project" class="project">
-        <div class="container"></div>
+        <div class="container">
+            <div class="slider">
+                <div class="slider__item">
+                    <a href="https://lukaszciaston-coder.github.io/goit-js-hw-10/">
+                        <img src="images/country_information.jpg" alt="Image 1">
+                    </a>
+                </div>
+                <div class="slider__item">
+                    <a href="https://lukaszciaston-coder.github.io/team-project-icecream/">
+                        <img src="images/ice_cream.png" alt="Image 2">
+                    </a>
+                </div>
+                <div class="slider__item">
+                    <a href="https://lukaszciaston-coder.github.io/goit-markup-hw-08/">
+                        <img src="images/web_studio.png" alt="Image 3">
+                    </a>
+                </div>
+            </div>
+        </div>
     </section>
+
     <!--====End Portfolio=====-->
     <!--====Contact====-->
     <section id="contact" class="contact">
         <footer class="footer">
-            <div class="container footer__item">
-                <div class="footer__adress__items">
-                    </a>
-                        <address class="footer__adress">
-                            <ul>
-                                <li><a class="footer__link footer__link--white" href="https://goo.gl/maps/dT46ezSivwhaStQy7"
-                                        title="Lokalizacja">m. Kraków, os. Bohaterów Września 24/70</a></li>
-            
-                                <li><a class="footer__link" href="/mailto:lukasz.ciaston@interia.pl">lukasz.ciaston@interia.pl</a></li>
-                                <li><a class="footer__link" href="/tel:509318811">+48 509-318-811</a></li>
-                            </ul>
-                        </address>
+            <div class="container">
+                <div class="footer__address__items">
+                    <a class="footer__link footer__link--white" href="https://goo.gl/maps/dT46ezSivwhaStQy7"
+                        title="Lokalizacja">Kraków, os. Bohaterów Września 24/70</a>
+                    <address class="footer__address">
+                        <ul>
+                            <li><a class="footer__link"
+                                    href="mailto:lukasz.ciaston@interia.pl">lukasz.ciaston@interia.pl</a></li>
+                            <li><a class="footer__link" href="tel:509318811">+48 509-318-811</a></li>
+                        </ul>
+                    </address>
                 </div>
             </div>
         </footer>
     </section>
     <!--====Mobile menu====-->
-   <!--====Main JS ====-->
+    <!--====Main JS ====-->
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
-   <script src="js/script.js"></script>
-<script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+        referrerpolicy="no-referrer"></script>
+    <script src="js/main.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            let spanNode = document.querySelector('.home__multiple');
+            let words = ['Web Designer', 'Web Developer', 'Web Master'];
+            let i = 0;
+            let j = 0;
+            let intervalId = null;
+
+            function displayNextLetter() {
+                spanNode.textContent += words[i][j];
+                j++;
+                if (j === words[i].length) {
+                    clearInterval(intervalId);
+                    j = 0;
+                    i = (i + 1) % words.length;
+                    setTimeout(startNextWord, 2000);
+                }
+            }
+
+            function startNextWord() {
+                spanNode.textContent = '';
+                intervalId = setInterval(displayNextLetter, 200);
+            }
+
+            startNextWord();
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const video = document.querySelector('.video');
+            const image = document.querySelector('.hero');
+            let isVideoPlaying = false;
+
+            function showVideo() {
+                video.style.display = 'block';
+                image.style.display = 'none';
+                video.play();
+                isVideoPlaying = true;
+            }
+
+            function hideVideo() {
+                video.style.display = 'none';
+                image.style.display = 'block';
+                video.pause();
+                video.currentTime = 0;
+                isVideoPlaying = false;
+            }
+
+            function toggleVideo() {
+                if (isVideoPlaying) {
+                    hideVideo();
+                } else {
+                    showVideo();
+                }
+            }
+
+            function handleVideoClick() {
+                toggleVideo();
+                video.removeEventListener('ended', handleVideoEnd);
+                setupVideoClickEvent();
+            }
+
+            function handleVideoEnd() {
+                hideVideo();
+                setupVideoClickEvent();
+            }
+
+            function setupVideoClickEvent() {
+                image.addEventListener('click', handleVideoClick);
+                video.addEventListener('click', handleVideoClick);
+                video.addEventListener('ended', handleVideoEnd);
+            }
+
+            // Add event listener to replay the video
+            video.addEventListener('ended', function () {
+                video.addEventListener('click', handleVideoClick);
+            });
+
+            setupVideoClickEvent();
+        });
+
+      $(document).ready(function () {
+            $('.slider').slick({
+                dots: true, // Add dots for navigation
+                appendDots: $('.slider'), // Append dots within the slider element
+                prevArrow: '<button type="button" class="slick-prev">Previous</button>',
+                nextArrow: '<button type="button" class="slick-next">Next</button>'
+            });
+        });
+    </script>
+
+
 </body>
 
 </html>
