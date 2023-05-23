@@ -8,12 +8,11 @@
    
     &__slider{
         position: relative;
-        width:250px;
-        height: 250px;
+        width:200px;
+        height: 200px;
         transform-style: preserve-3d;
         animation: rotate 30s linear infinite;
-        
-
+      
     }
     &__slider span{
         position: absolute;

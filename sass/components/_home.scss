@@ -4,43 +4,54 @@
     width: 100%;
     height: 100vh;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 70px 10% 0;
+    padding: 95px 10% 0;
+    box-sizing: border-box;
+    
 
     @media (min-width: 768px) {
         display: flex;
         flex-direction: row;
     }
+}
 
-    &__content {
-        max-width: 600px;
-        color: var(--black-100);
-        font-family: 'Mynerve';
-    }
+.home__content {
+    max-width: 600px;
+    color: var(--black-100);
+    font-family: 'Mynerve';
+    text-align: center;
+    /* Dodana właściwość */
+}
 
-    &__content h3 {
-        font-size: 32px;
-        font-weight: 700;
-    }
+.home__content h3 {
+    font-size: 32px;
+    font-weight: 700;
+}
 
-    &__content h3:nth-of-type(2) {
-        margin-bottom: 30px;
-    }
+.home__content h3:nth-of-type(2) {
+    margin-bottom: 30px;
+}
 
-    &__content h3 span {
-        color: var(--main-color);
-    }
+.home__content h3 span {
+    color: var(--main-color);
+}
 
-    &__content h1 {
-        font-size: 56px;
-        font-weight: 700;
-        margin: -3px 0;
-    }
+.home__content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
 }
 
 .home__multiple {
     position: relative;
+    text-align: center;
+    /* Dodana właściwość */
+}
+
+.social-media {
+    text-align: center;
+    /* Dodana właściwość */
 }
 
 .social-media a {
@@ -73,6 +84,8 @@
     box-shadow: 0 0 20px #00a78e;
     border-radius: 50%;
     overflow: hidden;
+    margin: 0 auto;
+    /* Dodana właściwość */
 
     @media (min-width: 768px) {
         width: 400px;
@@ -113,7 +126,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    margin: 0 auto;
+    /* Dodana właściwość */
 
     & img {
         position: absolute;
@@ -153,5 +167,11 @@
 
     100% {
         transform: rotate(360deg);
+    }
+}
+@media (max-width: 768px) {
+    .btn {
+        margin-bottom: 20px;
+        
     }
 }
