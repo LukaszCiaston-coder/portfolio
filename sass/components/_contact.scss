@@ -18,6 +18,12 @@
   gap: 20px;
 }
 
+@media (max-width: 640px) {
+  .contact_container {
+    flex-direction: column;
+  }
+}
+
 .column {
   display: flex;
   flex-direction: column;
