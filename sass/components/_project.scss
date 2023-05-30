@@ -11,7 +11,7 @@
 
 .slider .slick-dots {
     position: absolute;
-    bottom: -190px;
+    bottom: -140px;
     left: 50%;
     transform: translateX(-50%);
     list-style: none;
@@ -29,16 +29,16 @@
 .slider .slick-dots li button {
     width: 30px;
     height: 30px;
-    background-color: #fff;
-    opacity: 0.5;
-    border-radius: 50%;
+    background-color: #141272;
+    color: #fff;
     border: none;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .slider .slick-dots li.slick-active button {
-    background-color: #141272;
+  background-color: #00a78e;
+    color: #fff;
     opacity: 1;
 }
 .slick-next {
