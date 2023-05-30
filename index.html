@@ -165,6 +165,29 @@
                 });
             });
     </script>
+    <script>
+      
+            document.getElementById('contactForm').addEventListener('submit', function (event) {
+                    const nameInput = document.getElementById('name');
+                    const emailInput = document.getElementById('email');
+                    const messageInput = document.getElementById('message');
+
+                  
+                    if (nameInput.value.trim() === '' || emailInput.value.trim() === '' || messageInput.value.trim() === '') {
+                        alert('Please fill in all the required fields.');
+                        event.preventDefault(); 
+                        return;
+                    }
+
+                    // Sprawdzenie, czy podano prawidłowy adres e-mail
+                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if (!emailRegex.test(emailInput.value)) {
+                        alert('Please enter a valid email address.');
+                        event.preventDefault();
+                        return;
+                    }
+              });
+        </script>
     <script src="js/mobile.js"></script>
 </body>
 
