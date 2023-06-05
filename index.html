@@ -92,107 +92,133 @@
     </section>
     <!--====End About Me====-->
     <!--====Portfolio====-->
-<section id="project" class="project">
-    <div class="container">
-        <div class="slider">
-            <div class="slider__item">
-                <a href="https://lukaszciaston-coder.github.io/goit-js-hw11/">
-                    <img class="slider_items" src="images/image_search.jpg" alt="Image 1">
-                    <div class="slider__description">Image search app</div>
-                </a>
-            </div>
-            <div class="slider__item">
-                <a href="https://lukaszciaston-coder.github.io/goit-js-hw-10/">
-                    <img class="slider_items" src="images/country_information.jpg" alt="Image 2">
-                    <div class="slider__description">Country information app</div>
-                </a>
-            </div>
-            <div class="slider__item">
-                <a href="https://lukaszciaston-coder.github.io/team-project-icecream/">
-                    <img class="slider_items" src="images/ice_cream.png" alt="Image 3">
-                    <div class="slider__description">Website IceCream- team project </div>
-                </a>
-            </div>
-            <div class="slider__item">
-                <a href="https://lukaszciaston-coder.github.io/goit-markup-hw-08/">
-                    <img class="slider_items" src="images/web_studio.png" alt="Image 4">
-                    <div class="slider__description">Website - individual project</div>
-                </a>
+    <section id="project" class="project">
+        <div class="container">
+            <div class="slider">
+                <div class="slider__item">
+                    <a href="https://lukaszciaston-coder.github.io/goit-js-hw11/">
+                        <img class="slider_items" src="images/image_search.jpg" alt="Image 1">
+                        <div class="slider__description">Image search app</div>
+                    </a>
+                </div>
+                <div class="slider__item">
+                    <a href="https://lukaszciaston-coder.github.io/goit-js-hw-10/">
+                        <img class="slider_items" src="images/country_information.jpg" alt="Image 2">
+                        <div class="slider__description">Country information app</div>
+                    </a>
+                </div>
+                <div class="slider__item">
+                    <a href="https://lukaszciaston-coder.github.io/team-project-icecream/">
+                        <img class="slider_items" src="images/ice_cream.png" alt="Image 3">
+                        <div class="slider__description">Website IceCream- team project </div>
+                    </a>
+                </div>
+                <div class="slider__item">
+                    <a href="https://lukaszciaston-coder.github.io/goit-markup-hw-08/">
+                        <img class="slider_items" src="images/web_studio.png" alt="Image 4">
+                        <div class="slider__description">Website - individual project</div>
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!--====End Portfolio=====-->
     <!--====Contact====-->
-<section id="contact" class="contact">
-    <div class="container contact_container">
-        <div class="column">
-            <form id="contactForm" action="../php/send_email.php" method="post">
-                <div class="label-input-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="label-input-group">
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-        </div>
-        <div class="column">
-            <div class="label-input-group">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
+    <section id="contact" class="contact">
+        <div class="container contact_container">
+            <div class="column">
+                <form id="contactForm" onsubmit="sendEmail(); return false;">
+                    <div class="label-input-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="label-input-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
             </div>
-            <div class="button-container">
-                <button type="submit">Send</button>
+            <div class="column">
+                <div class="label-input-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <div class="button-container">
+                    <button type="submit">Send</button>
+                </div>
+                </form>
             </div>
-            </form>
         </div>
-    </div>
-</section>
+    </section>
 
 
 
 
-<!--==== Main JS ====-->
+    <!--==== Main JS ====-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+        referrerpolicy="no-referrer"></script>
     <script src="js/main.js"></script>
+
     <script>
         $(document).ready(function () {
-                $('.slider').slick({
-                    dots: true, // Add dots for navigation
-                    appendDots: $('.slider'), // Append dots within the slider element
-                    prevArrow: '<button type="button" class="slick-prev">Previous</button>',
-                    nextArrow: '<button type="button" class="slick-next">Next</button>'
-                });
+            $('.slider').slick({
+                dots: true, // Add dots for navigation
+                appendDots: $('.slider'), // Append dots within the slider element
+                prevArrow: '<button type="button" class="slick-prev">Previous</button>',
+                nextArrow: '<button type="button" class="slick-next">Next</button>'
             });
+        });
     </script>
     <script>
-      
-            document.getElementById('contactForm').addEventListener('submit', function (event) {
-                    const nameInput = document.getElementById('name');
-                    const emailInput = document.getElementById('email');
-                    const messageInput = document.getElementById('message');
+        function sendEmail() {
+            const nameInput = document.getElementById('name');
+            const emailInput = document.getElementById('email');
+            const messageInput = document.getElementById('message');
 
-                  
-                    if (nameInput.value.trim() === '' || emailInput.value.trim() === '' || messageInput.value.trim() === '') {
-                        alert('Please fill in all the required fields.');
-                        event.preventDefault(); 
-                        return;
-                    }
+            if (nameInput.value.trim() === '' || emailInput.value.trim() === '' || messageInput.value.trim() === '') {
+                alert('Please fill in all the required fields.');
+                return;
+            }
 
-                    // Sprawdzenie, czy podano prawidłowy adres e-mail
-                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                    if (!emailRegex.test(emailInput.value)) {
-                        alert('Please enter a valid email address.');
-                        event.preventDefault();
-                        return;
+            // Check if the email address is valid
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(emailInput.value)) {
+                alert('Please enter a valid email address.');
+                return;
+            }
+
+            const formData = new FormData();
+            formData.append('name', nameInput.value);
+            formData.append('email', emailInput.value);
+            formData.append('message', messageInput.value);
+
+            fetch('send_email.php', {
+                method: 'POST',
+                body: formData
+            })
+                .then(response => {
+                    if (response.ok) {
+                        alert('Message sent successfully');
+                        document.getElementById('contactForm').reset();
+                    } else {
+                        alert('Failed to send message. Please try again.');
                     }
-              });
-        </script>
+                })
+                .catch(error => {
+                    alert('Failed to send message. Please try again.');
+                });
+        }
+
+        document.getElementById('contactForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            sendEmail();
+        });
+    </script>
+
     <script src="js/mobile.js"></script>
+    <script src="php/send_email.php"></script>
 </body>
 
 

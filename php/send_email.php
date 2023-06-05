@@ -12,8 +12,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $success = mail($to, $subject, $message, $headers);
 
     if ($success) {
-        echo 'Wiadomość została wysłana.';
+        http_response_code(200);
     } else {
-        echo 'Wysyłanie wiadomości nie powiodło się. Spróbuj ponownie.';
+        http_response_code(500);
     }
+} else {
+    http_response_code(400);
 }
