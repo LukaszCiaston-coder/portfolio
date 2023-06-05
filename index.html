@@ -194,7 +194,7 @@
             formData.append('email', emailInput.value);
             formData.append('message', messageInput.value);
 
-            fetch('send_email.php', {
+            fetch('php/send_email.php', {
                 method: 'POST',
                 body: formData
             })
@@ -218,7 +218,6 @@
     </script>
 
     <script src="js/mobile.js"></script>
-    <script src="php/send_email.php"></script>
 </body>
 
 
