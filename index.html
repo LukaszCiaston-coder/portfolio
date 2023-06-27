@@ -78,7 +78,9 @@
     </section>
     <!--==== End Main page====-->
     <!--====About Me====-->
-    <section id="about" class="about">
+<section id="about" class="about">
+    <div class="about__content">
+        <h3>About Me</h3>
         <div class="about__slider container">
             <span style="--i:1;"><img src="images/20220702_174338.jpg" alt=""></span>
             <span style="--i:2;"><img src="images/20220721_191645.jpg" alt=""></span>
@@ -89,10 +91,13 @@
             <span style="--i:7;"><img src="images/20220818_180812.jpg" alt=""></span>
             <span style="--i:8;"><img src="images/20220819_172636.jpg" alt=""></span>
         </div>
-    </section>
+    </div>
+</section>
+
     <!--====End About Me====-->
     <!--====Portfolio====-->
     <section id="project" class="project">
+        <h3 class="project__title">Project</h3>
         <div class="container">
             <div class="slider">
                 <div class="slider__item">
@@ -128,20 +133,32 @@
     <section id="contact" class="contact">
         <div class="container contact_container">
             <div class="column">
-                <form id="contactForm" onsubmit="sendEmail(); return false;">
+                <form id="contactForm" action="https://formsubmit.io/send/lukasz.ciaston@interia.pl" method="POST">
                     <div class="label-input-group">
                         <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
+                        <input 
+                        type="text" 
+                        id="name" 
+                        name="name" 
+                        placeholder="your name">
                     </div>
                     <div class="label-input-group">
-                        <label for="email">E-mail:</label>
-                        <input type="email" id="email" name="email" required>
+                        <label for="mail">E-mail:</label>
+                        <input 
+                        type="mail" 
+                        id="mail" 
+                        name="mail"
+                        placeholder="your mail">
                     </div>
-            </div>
-            <div class="column">
+                </div>
+                <div class="column">
                 <div class="label-input-group">
                     <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <textarea
+                     id="message" 
+                     name="message" 
+                     rows="5" 
+                     placeholder="your massage"></textarea>
                 </div>
                 <div class="button-container">
                     <button type="submit">Send</button>
